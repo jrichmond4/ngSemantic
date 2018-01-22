@@ -1,39 +1,37 @@
 {
-  "name": "ng-semantic",
-  "version": "1.1.13",
-  "main": "./ng-semantic.js",
-  "description": "Angular2 building blocks based on Semantic UI",
-  "scripts": {
-    "demo:lint": "tslint -c ./tslint.json 'demo/app/**/*.ts'",
-    "library:lint": "tslint -c ./tslint.json 'src/**/*.ts'",
-    "demo:server": "node tools/server.js",
-    "tsc": "tsc",
-    "tsc:w": "tsc -w -p ./demo",
-    "start": "tsc && concurrently \"tsc -w\" \"npm run tsc:w\" \"lite-server -c tools/dev.config.js\" ",
-    "prepublish": "npm run demo:lint",
-    "library:bundle": "tsc && rm -rf bundles && node tools/library.builder.js",
-    "demo:bundle": "tsc -p './demo' && node tools/demo.builder.js"
+  "_from": "ng-semantic",
+  "_id": "ng-semantic@1.1.13",
+  "_inBundle": false,
+  "_integrity": "sha1-SoJWCldQ+xIRyxJoPtrNfOVpCoU=",
+  "_location": "/ng-semantic",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "ng-semantic",
+    "name": "ng-semantic",
+    "escapedName": "ng-semantic",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/vladotesanovic/ngSemantic"
-  },
-  "engines": {
-    "node": ">= 5.4.1"
-  },
-  "keywords": [
-    "angular",
-    "angular2",
-    "semanticui",
-    "semantic-ui"
+  "_requiredBy": [
+    "#USER",
+    "/"
   ],
-  "author": "Vlado Tešanović",
+  "_resolved": "https://registry.npmjs.org/ng-semantic/-/ng-semantic-1.1.13.tgz",
+  "_shasum": "4a82560a5750fb1211cb12683edacd7ce5690a85",
+  "_spec": "ng-semantic",
+  "_where": "C:\\ProgramData\\node\\ipt-semantic - Copy",
+  "author": {
+    "name": "Vlado Tešanović"
+  },
   "bugs": {
     "url": "https://github.com/vladotesanovic/ngSemantic/issues"
   },
-  "typings": "./ng-semantic.d.ts",
-  "homepage": "https://ng-semantic.herokuapp.com/",
-  "license": "MIT",
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Angular2 building blocks based on Semantic UI",
   "devDependencies": {
     "@angular/common": "^2.0.1",
     "@angular/compiler": "^2.0.1",
@@ -59,5 +57,35 @@
     "tslint": "^3.14.0",
     "typescript": "^2.0.2",
     "zone.js": "^0.6.23"
-  }
+  },
+  "engines": {
+    "node": ">= 5.4.1"
+  },
+  "homepage": "https://ng-semantic.herokuapp.com/",
+  "keywords": [
+    "angular",
+    "angular2",
+    "semanticui",
+    "semantic-ui"
+  ],
+  "license": "MIT",
+  "main": "./ng-semantic.js",
+  "name": "ng-semantic",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladotesanovic/ngSemantic.git"
+  },
+  "scripts": {
+    "demo:bundle": "tsc -p './demo' && node tools/demo.builder.js",
+    "demo:lint": "tslint -c ./tslint.json 'demo/app/**/*.ts'",
+    "demo:server": "node tools/server.js",
+    "library:bundle": "tsc && rm -rf bundles && node tools/library.builder.js",
+    "library:lint": "tslint -c ./tslint.json 'src/**/*.ts'",
+    "prepublish": "npm run demo:lint",
+    "start": "tsc && concurrently \"tsc -w\" \"npm run tsc:w\" \"lite-server -c tools/dev.config.js\" ",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w -p ./demo"
+  },
+  "typings": "./ng-semantic.d.ts",
+  "version": "1.1.13"
 }
